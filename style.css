@@ -15,7 +15,7 @@ body{
   justify-content: space-between;
 }
 header{
-  background-image: url(/img/img.jfif);
+  background-image: url(img/img.jfif);
   background-size: cover;
   height: 800px;
   margin: 0;
