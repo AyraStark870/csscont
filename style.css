@@ -1,48 +1,83 @@
 body{
-  margin: 0;
+  margin: 10px;
   background-color: black;
   font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: white;
 }
+/*
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+header{
+  background-image: url(img/img.jfif);
+  background-size: cover;
+  margin-bottom:20px ;
 
-.logo-netflix{
-  height: 100px;
 }
 .header-div{
-  padding: 20px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header{
-  background-image: url(img/img.jfif);
-  background-size: cover;
-  height: 800px;
-  margin: 0;
+.header-img{
+  height: 100px;
 }
-.header{
-  margin: 200px 200px 0 200px;
-
+/* segunda oarte del header */
+.header-2div{
   text-align: center;
-  color: white;
   font-size: 1.8em;
 }
-.primer-form{
+@media (min-width:768px ) {
+  header{
+    height: 800px;
+    margin: 0;
+  }
+  .header-2div{
+  margin: 170px 200px auto 200px;
+
+
+  }
+  body{
+    margin: 0;
+  }
+}
+.header-form{
+
+
+
+ margin-right: 20px;
+}
+.header-form-select{
   font-size: 1rem;
   height: 40px;
   width: 100px;
   border-radius: 5px;
-}
-.select {
-  color: white;
-  padding: 0 auto;
+  /* padding: 0 auto; */
   background-color: transparent;
+  color: white;
+  border: 1px solid white;
+   margin-right: 20px;
 }
+.header-form-btn{
+
+  height: 40px;
+  width: 100px;
+
+}
+
+
+
+
 
 .form-email button::after {
   content: " >";
   color: white;
 }
+
 button{
   cursor: pointer;
   color: white;
@@ -52,48 +87,66 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+
+
 }
 .form-email button{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   text-align: center;
   height: 48px;
-  width: 150px;
+  width: 100px;
 }
 #email{
 
     margin: 0;
     height: 40px;
+    width: 200px;
+}
+@media (min-width: 768px) {
+#email{
     width: 350px;
+ }
+ .form-email button{
+  font-size: 1.2rem;
+   width: 150px;
 }
-.container {
-  display: flex;
-  width:70%; margin:0px auto;
-  align-items: center;
-  justify-content:center;
-  color: white;
-  height: 400px;
-
-}
-.container:first-of-type{
-
-}
-.container img{
-  height: 300px;
-  width:50%; margin:0px auto;
 }
 
-#div{
+/* MAIN*/
+.container{
   border-bottom: 2px solid gray;
 }
-#div:first-of-type{
+.container:first-of-type{
     border-top: 2px solid gray;
 }
+.container-section {
+  color: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px ) {
+  .container-section{
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+
+    width:70%; margin:0px auto;
+}
+
+}
+.container-img{
+  height: 300px;
+  width:50%; margin:0px auto;
+  padding: 10px;
+}
+
 .container-text{
     text-align: center;
     font-size: 1.4em;
-
-
 }
+
+
 footer{
   color: gray;
   width:60%; margin:0px auto;
@@ -125,3 +178,61 @@ footer .select{
  color: gray;
 }
 
+
+/* APORTE */
+
+.last{
+margin-top: 20px ;
+border-bottom: 2px solid gray;
+}
+.last-flex{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.last-btn{
+ text-transform: uppercase;
+ border: 1px solid gray;
+ box-sizing:border-box;
+ width: 300px;
+ background-color: gray;
+ padding: 15px;
+ font-size: 1rem;
+ font-weight: bold;
+ text-align: left;
+}
+@media (min-width: 768px) {
+  .last-btn{
+    width: 500px;
+
+  }
+}
+.last-form{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.last h2{
+  font-size: 2rem;
+  text-align: center;
+}
+.oculto-show{
+
+ margin-top: 0;
+ padding-top: 0;
+ width: 500px;
+ background-color: gray;
+ padding: 15px;
+ font-size: 1rem;
+ font-weight: bold;
+ text-align: left;
+}
+.oculto{
+  display: none;
+}
+#idiom{
+  background-color: transparent;
+  padding: 5px;
+  font-weight: bold;
+}
