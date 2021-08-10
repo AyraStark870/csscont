@@ -1,0 +1,127 @@
+body{
+  margin: 0;
+  background-color: black;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+}
+
+.logo-netflix{
+  height: 100px;
+}
+.header-div{
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header{
+  background-image: url(/img/img.jfif);
+  background-size: cover;
+  height: 800px;
+  margin: 0;
+}
+.header{
+  margin: 200px 200px 0 200px;
+
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+}
+.primer-form{
+  font-size: 1rem;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+}
+.select {
+  color: white;
+  padding: 0 auto;
+  background-color: transparent;
+}
+
+.form-email button::after {
+  content: " >";
+  color: white;
+}
+button{
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+.form-email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-email button{
+  font-size: 1.2rem;
+  text-align: center;
+  height: 48px;
+  width: 150px;
+}
+#email{
+
+    margin: 0;
+    height: 40px;
+    width: 350px;
+}
+.container {
+  display: flex;
+  width:70%; margin:0px auto;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  height: 400px;
+
+}
+.container:first-of-type{
+
+}
+.container img{
+  height: 300px;
+  width:50%; margin:0px auto;
+}
+
+#div{
+  border-bottom: 2px solid gray;
+}
+#div:first-of-type{
+    border-top: 2px solid gray;
+}
+.container-text{
+    text-align: center;
+    font-size: 1.4em;
+
+
+}
+footer{
+  color: gray;
+  width:60%; margin:0px auto;
+}
+
+.enlaceEspecial{
+    text-align: left;
+  color: gray;
+  text-decoration: none;
+}
+.enlaceEspecial:hover{
+ text-decoration: underline;
+}
+.conteiner-enlaces{
+
+  margin:20px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap:5px;
+}
+.conteiner-enlaces a{
+  text-align: left;
+  color: gray;
+  text-decoration: none;
+  padding: 8px;
+}
+
+footer .select{
+ color: gray;
+}
+
