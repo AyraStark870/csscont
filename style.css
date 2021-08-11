@@ -20,8 +20,15 @@ header{
 }
 .header-div{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+}
+@media (min-width: 768px) {
+  .header-div{
+  flex-direction: row;
+  }
 }
 .header-img{
   height: 100px;
@@ -29,7 +36,8 @@ header{
 /* segunda oarte del header */
 .header-2div{
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.4em;
+
 }
 @media (min-width:768px ) {
   header{
@@ -38,16 +46,13 @@ header{
   }
   .header-2div{
   margin: 170px 200px auto 200px;
-
-
+  font-size: 1.8em;
   }
   body{
     margin: 0;
   }
 }
 .header-form{
-
-
 
  margin-right: 20px;
 }
@@ -124,6 +129,14 @@ button{
   height: 400px;
   display: flex;
   flex-direction: column;
+
+}
+.reverse{
+
+  display: flex;
+  flex-direction: column-reverse;
+
+
 }
 @media (min-width: 768px ) {
   .container-section{
@@ -143,7 +156,13 @@ button{
 
 .container-text{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
+}
+@media (min-width: 768px) {
+    .container-text{
+
+    font-size: 1.5em;
+  }
 }
 
 
@@ -161,11 +180,17 @@ footer{
  text-decoration: underline;
 }
 .conteiner-enlaces{
-
+  font-size: 0.8rem;
   margin:20px auto;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(2,1fr);
   column-gap:5px;
+}
+@media (min-width: 768px) {
+  .conteiner-enlaces{
+   font-size: 1.2rem;
+    grid-template-columns: repeat(4,1fr);
+  }
 }
 .conteiner-enlaces a{
   text-align: left;
